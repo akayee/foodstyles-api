@@ -1,0 +1,22 @@
+type Todo {
+    id: ID
+    completed: Boolean
+    title: String
+}
+input TodoInput {
+    id: ID
+    completed: Boolean
+    title: String
+}
+input TodoRecordInput {
+    id: ID
+    completed: Boolean
+    title: String
+}
+input TodoUpdateInput {
+    id: ID!
+}
+type TodoOutput {
+    count: Int
+    data: [Todo]
+}

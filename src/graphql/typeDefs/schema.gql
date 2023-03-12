@@ -1,0 +1,12 @@
+# import Todo from 'todo.gql'
+
+type Query {
+    listTodos: TodoOutput
+}
+
+type Mutation {
+    createTodo(Mutation: TodoInput): Todo
+    markTodoCompleted(Mutation: TodoUpdateInput): Todo
+    markTodoUncompleted(Mutation: TodoUpdateInput): Todo
+    deleteTodo(Mutation: TodoUpdateInput): Boolean
+}
